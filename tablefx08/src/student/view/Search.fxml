@@ -7,12 +7,12 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.controller.SearchController">
    <children>
-      <TableView fx:id="tableContent" layoutX="6.0" layoutY="6.0" onMouseClicked="#onMouseClicked" prefHeight="404.0" prefWidth="593.0">
+      <TableView fx:id="tableContent" layoutX="6.0" layoutY="6.0" onMouseClicked="#onMouseClicked" opacity="0.99" prefHeight="404.0" prefWidth="593.0">
          <columns>
-            <TableColumn fx:id="col_id" prefWidth="99.0" text="id" />
-            <TableColumn fx:id="col_name" prefWidth="136.0" text="Name" />
-            <TableColumn fx:id="col_email" prefWidth="172.0" text="E-mail" />
-            <TableColumn fx:id="col_phone" minWidth="0.0" prefWidth="192.0" text="Phone Number" />
+            <TableColumn fx:id="col_id" prefWidth="99.0" style="-fx-background-color: cyan;" text="id" />
+            <TableColumn fx:id="col_name" prefWidth="136.0" style="-fx-background-color: yellow;" text="Name" />
+            <TableColumn fx:id="col_email" prefWidth="172.0" style="-fx-background-color: cyan;" text="E-mail" />
+            <TableColumn fx:id="col_phone" minWidth="0.0" prefWidth="192.0" style="-fx-background-color: cyan;" text="Phone Number" />
          </columns>
       </TableView>
       <Button layoutX="248.0" layoutY="414.0" mnemonicParsing="false" onAction="#onClickMenu" text="Menu" />

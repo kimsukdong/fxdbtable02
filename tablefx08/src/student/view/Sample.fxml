@@ -2,20 +2,22 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.controller.SampleController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen; -fx-border-color: blue; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.controller.SampleController">
    <children>
-      <Label alignment="CENTER" layoutX="211.0" layoutY="25.0" prefHeight="48.0" prefWidth="179.0" text="Menu ">
+      <Label alignment="CENTER" layoutX="293.0" layoutY="30.0" prefHeight="81.0" prefWidth="230.0" text="Menu " textFill="#9e1c1c">
          <font>
-            <Font size="35.0" />
+            <Font size="65.0" />
          </font>
       </Label>
-      <GridPane layoutX="99.0" layoutY="101.0" prefHeight="196.0" prefWidth="438.0">
+      <GridPane layoutX="99.0" layoutY="139.0" prefHeight="188.0" prefWidth="438.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="209.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="195.0" />
@@ -27,52 +29,57 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Search">
+            <Label text="Search" textFill="#792525">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label text="Update" GridPane.rowIndex="1">
+            <Label text="Update" textFill="#792525" GridPane.rowIndex="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label text="Add" GridPane.rowIndex="2">
+            <Label text="Add" textFill="#792525" GridPane.rowIndex="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label text="Delete" GridPane.rowIndex="3">
+            <Label text="Delete" textFill="#792525" GridPane.rowIndex="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" onAction="#onClickSearch" prefHeight="40.0" prefWidth="150.0" text="Search" GridPane.columnIndex="1">
+            <Button mnemonicParsing="false" onAction="#onClickSearch" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Search" GridPane.columnIndex="1">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onClickUpdate" prefHeight="40.0" prefWidth="150.0" text="Update" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" onAction="#onClickUpdate" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Update" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onClickAdd" prefHeight="40.0" prefWidth="150.0" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#onClickAdd" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onClickDelete" prefHeight="40.0" prefWidth="150.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button mnemonicParsing="false" onAction="#onClickDelete" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
          </children>
       </GridPane>
-      <Button layoutX="318.0" layoutY="321.0" mnemonicParsing="false" onAction="#onClickClose" prefHeight="40.0" prefWidth="150.0" text="Close">
+      <Button layoutX="315.0" layoutY="338.0" mnemonicParsing="false" onAction="#onClickClose" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: red;" text="Close" textFill="#f5f0f0">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
+      <ImageView fitHeight="113.0" fitWidth="244.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/hoseo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
