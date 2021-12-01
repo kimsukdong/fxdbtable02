@@ -14,7 +14,7 @@
    <children>
       <Label alignment="CENTER" layoutX="293.0" layoutY="30.0" prefHeight="81.0" prefWidth="230.0" text="Menu " textFill="#9e1c1c">
          <font>
-            <Font size="65.0" />
+            <Font name="Arial Rounded MT Bold" size="65.0" />
          </font>
       </Label>
       <GridPane layoutX="99.0" layoutY="139.0" prefHeight="188.0" prefWidth="438.0">
@@ -31,49 +31,49 @@
          <children>
             <Label text="Search" textFill="#792525">
                <font>
-                  <Font size="24.0" />
+                   <Font name="Elephant" size="24.0" />
                </font>
             </Label>
             <Label text="Update" textFill="#792525" GridPane.rowIndex="1">
                <font>
-                  <Font size="24.0" />
+                   <Font name="Elephant" size="24.0" />
                </font>
             </Label>
             <Label text="Add" textFill="#792525" GridPane.rowIndex="2">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Elephant" size="24.0" />
                </font>
             </Label>
             <Label text="Delete" textFill="#792525" GridPane.rowIndex="3">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Elephant" size="24.0" />
                </font>
             </Label>
             <Button mnemonicParsing="false" onAction="#onClickSearch" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Search" GridPane.columnIndex="1">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#onClickUpdate" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Update" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#onClickAdd" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
-                  <Font size="18.0" />
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#onClickDelete" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-border-color: black;" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
-                  <Font size="18.0" />
+                 <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
             </Button>
          </children>
       </GridPane>
       <Button layoutX="315.0" layoutY="338.0" mnemonicParsing="false" onAction="#onClickClose" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: red;" text="Close" textFill="#f5f0f0">
          <font>
-            <Font size="18.0" />
+            <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Button>
       <ImageView fitHeight="113.0" fitWidth="244.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
