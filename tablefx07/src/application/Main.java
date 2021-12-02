@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 
@@ -17,7 +18,9 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			primaryStage.setTitle("Student Record Magement");
+			primaryStage.setTitle("학생 통합 관리");
+			Image image = new Image(getClass().getResource("/images/hoseo2.png").toExternalForm());
+			primaryStage.getIcons().add(image);
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

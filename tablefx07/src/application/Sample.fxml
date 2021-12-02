@@ -7,6 +7,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -15,9 +17,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <children>
-      <HBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="786.0">
+      <HBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="53.0" prefWidth="781.0" style="-fx-background-color: #c9debd; -fx-border-color: #1a2beb;">
          <children>
             <Label text="Student Record Management" textFill="#ee162c">
                <font>
@@ -26,7 +28,7 @@
             </Label>
          </children>
       </HBox>
-      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="64.0" prefHeight="534.0" prefWidth="256.0" spacing="20.0" style="-fx-border-color: blue;">
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="70.0" prefHeight="528.0" prefWidth="256.0" spacing="20.0" style="-fx-background-color: #cfbdde; -fx-border-color: #1a2beb;">
          <children>
             <Label text="학생 정보" textFill="#3120ee">
                <font>
@@ -71,7 +73,7 @@
                   <TextField fx:id="txtid" layoutX="96.0" layoutY="77.0" GridPane.columnIndex="1" />
                </children>
             </GridPane>
-            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <HBox prefHeight="80.0" prefWidth="239.0" spacing="10.0">
                <children>
                   <Button mnemonicParsing="false" onAction="#onClickAdd" prefHeight="65.0" prefWidth="75.0" style="-fx-background-color: cyan;" text="추가">
                      <font>
@@ -93,14 +95,19 @@
                   <Insets left="10.0" />
                </padding>
             </HBox>
+            <ImageView fitHeight="138.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hoseo2.png" />
+               </image>
+            </ImageView>
          </children>
          <padding>
             <Insets left="5.0" right="10.0" />
          </padding>
       </VBox>
-      <VBox layoutX="283.0" layoutY="67.0" prefHeight="528.0" prefWidth="516.0" spacing="10.0" style="-fx-border-color: blue;">
+      <VBox layoutX="277.0" layoutY="73.0" prefHeight="521.0" prefWidth="518.0" spacing="10.0" style="-fx-border-color: blue;">
          <children>
-            <HBox alignment="CENTER" prefHeight="61.0" prefWidth="485.0" spacing="20.0">
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="504.0" spacing="20.0" style="-fx-background-color: #d6c596;">
                <children>
                   <Button mnemonicParsing="false" onAction="#onClickUpdate" prefHeight="62.0" prefWidth="109.0" style="-fx-background-color: orange;" text="정정">
                      <font>
@@ -118,7 +125,7 @@
                </VBox.margin>
             </HBox>
             <Separator prefWidth="200.0" style="-fx-border-color: green;" />
-            <TableView fx:id="tableContent" onMouseClicked="#onMouseClicked" prefHeight="440.0" prefWidth="516.0">
+            <TableView fx:id="tableContent" onMouseClicked="#onMouseClicked" prefHeight="437.0" prefWidth="517.0" style="-fx-background-color: #9da3e0;">
               <columns>
                 <TableColumn fx:id="col_id" prefWidth="107.0" text="ID" />
                 <TableColumn fx:id="col_name" prefWidth="108.0" text="이름" />
